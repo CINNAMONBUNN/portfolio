@@ -1,0 +1,228 @@
+@import 'normalize.scss';
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+$primaryBack:#0F0F0F;
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background: url(./../../src/public/img/header.png) no-repeat center center;
+    background-size: cover;
+    &__links {
+        width: 100%;
+        padding: 65px 200px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__icon {
+        width: 32px;
+        height: 32px;
+        &--vk {
+            margin-left: 20px;
+            width: 45px;
+            height: 45px;
+        }
+    }
+    &__text {
+        width: 80%;
+        max-width: 970px;
+        padding: 200px 0px 0px 0px;
+        margin: 0 auto;
+        text-align: center;
+        &-item {
+            font-weight: 100;
+            font-size: 80px;
+        }
+    }
+}
+.wrapper {
+    background: $primaryBack;
+    padding: 100px 200px;
+}
+.title {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 47px;
+    line-height: 135%;  
+}
+.about {
+    &__text {
+        max-width: 712px;
+        margin-bottom: 100px;
+    }
+}
+.projects {
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #FFFFFF;
+        padding: 20px 0px;
+        margin-bottom: 20px;
+        &-name {
+            display: flex;
+            align-items: center;
+        }
+        &-category {
+            color: #515151;
+            font-size: 24px;
+            line-height: 140%;
+        }
+    }
+    &__link {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 135%;
+    }
+    &__icon {
+        margin-left: 10px;
+        margin-bottom: -2px;
+    }
+}
+
+
+
+@media screen and(max-width: 1650px) {
+    .header {
+        &__links {
+            padding: 60px 100px;
+        }
+    }
+}
+
+@media screen and(max-width: 1135px) {
+    .header {
+        &__text-item {
+            font-size: 60px;
+        }
+    }
+    .wrapper {
+        padding: 100px 100px;
+    }
+}
+
+@media screen and(max-width: 880px) {
+    .header {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+}
+@media screen and(max-width: 770px) {
+    .header {
+        height: auto;
+        &__text {
+            padding: 140px 0px 60px 0px;
+            &-item {
+                font-size: 54px;
+            }
+        }
+        &__links {
+            padding: 60px 100px 20px 100px;
+        }
+        &__icon {
+            width: 27px;
+            height: 27px;
+            &--vk {
+                margin-left: 20px;
+                width: 42px;
+                height: 42px;
+            }
+        }
+    }
+    .wrapper {
+        padding: 50px 16px;
+    }
+    * {
+        font-size: 20px;
+    }
+    .title {
+        font-size: 35px;
+    }
+    .projects {
+        &__link {
+            font-size: 24px;
+        }
+        &__item-category {
+            font-size: 20px;
+        }
+    }
+}
+@media screen and(max-width: 640px) {
+    .header {
+        &__text {
+            padding: 140px 0px 60px 0px;
+            &-item {
+                font-size: 38px;
+            }
+        }
+    }  
+}
+
+@media screen and(max-width: 540px) {
+    .header {
+        &__links {
+            padding: 60px 40px 20px 40px;
+        }
+        &__icon {
+            width: 27px;
+            height: 27px;
+            &--vk {
+                margin-left: 20px;
+                width: 42px;
+                height: 42px;
+            }
+        }
+    }
+}
+@media screen and(max-width: 470px) {
+    .header {
+        &__text {
+            padding: 140px 0px 60px 0px;
+            &-item {
+                font-size: 24px;
+            }
+        }
+        &__links {
+            padding: 60px 20px 20px 20px;
+        }
+        &__icon {
+            width: 22px;
+            height: 22px;
+            &--vk {
+                margin-left: 20px;
+                width: 37px;
+                height: 37px;
+            }
+        }
+    }
+    .title {
+        font-size: 20px;
+    }
+    .about {
+        &__text {
+            font-size: 14px;
+            margin-bottom: 50px;
+        }
+    }
+    .projects {
+        &__link {
+            font-size: 18px;
+        }
+        &__item-category {
+            font-size: 14px;
+        }
+    }
+}
