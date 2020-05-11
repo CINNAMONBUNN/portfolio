@@ -565,6 +565,14 @@ template {
   .projects__item-category {
     font-size: 14px;
   }
+  .projects__icon {
+    width: 18px;
+    height: 18px;
+    margin-bottom: 0;
+  }
+  .projects__item {
+    padding: 10px 0px;
+  }
 
   .wrapper {
     padding: 50px 16px 30px 16px;
