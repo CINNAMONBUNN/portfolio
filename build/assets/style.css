@@ -373,7 +373,7 @@ template {
 .header__text {
   width: 80%;
   max-width: 970px;
-  padding: 200px 0px 0px 0px;
+  padding: 150px 0px 0px 0px;
   margin: 0 auto;
   text-align: center;
 }
@@ -393,10 +393,19 @@ template {
   font-size: 47px;
   line-height: 135%;
 }
+.title--items {
+  font-size: 32px;
+}
 
 .about__text {
   max-width: 712px;
+  margin-bottom: 50px;
+}
+.about__text--items {
   margin-bottom: 100px;
+}
+.about__text--item {
+  margin-bottom: 5px;
 }
 
 .projects__item {
@@ -512,14 +521,17 @@ template {
   }
 }
 @media screen and (max-width: 470px) {
+  .header {
+    height: 250px;
+  }
   .header__text {
-    padding: 140px 0px 60px 0px;
+    padding: 140px 0px 0px 0px;
   }
   .header__text-item {
-    font-size: 24px;
+    font-size: 30px;
   }
   .header__links {
-    padding: 60px 20px 20px 20px;
+    padding: 20px;
   }
   .header__icon {
     width: 22px;
@@ -537,7 +549,13 @@ template {
 
   .about__text {
     font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .about__text--items {
     margin-bottom: 50px;
+  }
+  .about__text--item {
+    margin-bottom: 5px;
   }
 
   .projects__link {
@@ -545,6 +563,10 @@ template {
   }
   .projects__item-category {
     font-size: 14px;
+  }
+
+  .wrapper {
+    padding: 50px 16px 30px 16px;
   }
 }
 

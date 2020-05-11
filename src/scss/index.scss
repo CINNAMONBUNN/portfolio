@@ -1,5 +1,4 @@
 @import 'normalize.scss';
-// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
 $primaryBack:#0F0F0F;
@@ -38,7 +37,7 @@ $primaryBack:#0F0F0F;
     &__text {
         width: 80%;
         max-width: 970px;
-        padding: 200px 0px 0px 0px;
+        padding: 150px 0px 0px 0px;
         margin: 0 auto;
         text-align: center;
         &-item {
@@ -55,12 +54,21 @@ $primaryBack:#0F0F0F;
     margin-bottom: 20px;
     font-weight: 500;
     font-size: 47px;
-    line-height: 135%;  
+    line-height: 135%;
+    &--items {
+        font-size: 32px;
+    }
 }
 .about {
     &__text {
         max-width: 712px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
+        &--items {
+            margin-bottom: 100px;
+        }
+        &--item {
+            margin-bottom: 5px;
+        }
     }
 }
 .projects {
@@ -189,14 +197,15 @@ $primaryBack:#0F0F0F;
 }
 @media screen and(max-width: 470px) {
     .header {
+        height: 250px;
         &__text {
-            padding: 140px 0px 60px 0px;
+            padding: 140px 0px 0px 0px;
             &-item {
-                font-size: 24px;
+                font-size: 30px;
             }
         }
         &__links {
-            padding: 60px 20px 20px 20px;
+            padding: 20px;
         }
         &__icon {
             width: 22px;
@@ -214,7 +223,13 @@ $primaryBack:#0F0F0F;
     .about {
         &__text {
             font-size: 14px;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
+            &--items {
+                margin-bottom: 50px;
+            }
+            &--item {
+                margin-bottom: 5px;
+            }
         }
     }
     .projects {
@@ -224,5 +239,8 @@ $primaryBack:#0F0F0F;
         &__item-category {
             font-size: 14px;
         }
+    }
+    .wrapper {
+        padding: 50px 16px 30px 16px;
     }
 }
